@@ -16,10 +16,12 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func celaNotaButton(_ sender: Any) {
+    
+    
+    @IBAction func celaNotaButton(_ sender: UIButton) {
     }
     
-    @IBAction func pulovaNotaButton(_ sender: Any) {
+    @IBAction func pulovaNotaButton(_ sender: UIButton) {
     }
     
     @IBOutlet weak var imageView: UIImageView!
