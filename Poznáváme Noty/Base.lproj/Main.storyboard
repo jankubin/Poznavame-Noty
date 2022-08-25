@@ -66,6 +66,9 @@
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Dvaatřicetinová nota"/>
+                                        <connections>
+                                            <action selector="dvaatricetinovaNotaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sz7-vO-hLP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mc-3L-2fs">
                                         <rect key="frame" x="8" y="176" width="342" height="34"/>
@@ -75,6 +78,9 @@
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Šestnáctinová nota"/>
+                                        <connections>
+                                            <action selector="sestnactinovaNotaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jdx-jR-le8"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hu2-p4-tKx">
                                         <rect key="frame" x="8" y="258" width="342" height="34"/>
@@ -119,6 +125,9 @@
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Osminová nota"/>
+                                        <connections>
+                                            <action selector="osminovaNotaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UFI-Sl-aaf"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0d0-MD-slg">
                                         <rect key="frame" x="8" y="300" width="342" height="34"/>
@@ -137,6 +146,9 @@
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Čtvrťová nota"/>
+                                        <connections>
+                                            <action selector="ctvrtovaNotaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ipJ-dn-lVa"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>

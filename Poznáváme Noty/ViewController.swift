@@ -23,6 +23,19 @@ class ViewController: UIViewController {
     
     @IBAction func pulovaNotaButton(_ sender: UIButton) {
     }
+    @IBAction func ctvrtovaNotaButton(_ sender: UIButton) {
+    }
+    
+    @IBAction func osminovaNotaButton(_ sender: UIButton) {
+    }
+    
+    @IBAction func sestnactinovaNotaButton(_ sender: UIButton) {
+    }
+    
+    @IBAction func dvaatricetinovaNotaButton(_ sender: Any) {
+    }
+    
+    
     
     @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
