@@ -58,7 +58,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iNl-2M-Ad3">
                                 <rect key="frame" x="16" y="409" width="358" height="388"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCD-dC-APw">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCD-dC-APw">
                                         <rect key="frame" x="8" y="216" width="342" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="FUn-op-Ixk"/>
@@ -70,7 +70,7 @@
                                             <action selector="dvaatricetinovaNotaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sz7-vO-hLP"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mc-3L-2fs">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mc-3L-2fs">
                                         <rect key="frame" x="8" y="176" width="342" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="XDe-mT-WkH"/>
@@ -82,7 +82,7 @@
                                             <action selector="sestnactinovaNotaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jdx-jR-le8"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hu2-p4-tKx">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hu2-p4-tKx">
                                         <rect key="frame" x="8" y="258" width="342" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="97j-gA-tNU"/>
@@ -90,8 +90,11 @@
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Půlová nota s tečkou"/>
+                                        <connections>
+                                            <action selector="pulovaNotaSTeckouButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ipq-4g-Sqw"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qy3-OR-xT0">
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qy3-OR-xT0">
                                         <rect key="frame" x="8" y="50" width="342" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="WB7-V3-B94"/>
@@ -103,7 +106,7 @@
                                             <action selector="pulovaNotaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HUd-Tk-g5h"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oo3-LN-SRQ">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oo3-LN-SRQ">
                                         <rect key="frame" x="8" y="8" width="342" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="7jP-e0-ttj"/>
@@ -117,7 +120,7 @@
                                             <action selector="celaNotaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gqL-VX-WCs"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egn-xs-3vS">
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egn-xs-3vS">
                                         <rect key="frame" x="8" y="134" width="342" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="Aqf-Vm-ruV"/>
@@ -129,7 +132,7 @@
                                             <action selector="osminovaNotaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UFI-Sl-aaf"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0d0-MD-slg">
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0d0-MD-slg">
                                         <rect key="frame" x="8" y="300" width="342" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="spR-1x-DDK"/>
@@ -137,8 +140,11 @@
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Čtvrťová nota s tečkou"/>
+                                        <connections>
+                                            <action selector="ctvrtovaNotaSTeckouButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xvl-be-InY"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrz-eV-oIA">
+                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrz-eV-oIA">
                                         <rect key="frame" x="8" y="92" width="342" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="b70-HA-qqe"/>

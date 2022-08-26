@@ -8,34 +8,80 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var correctAnswer = 1
+    let notyArray = [UIImage(named: "celaNota"), UIImage(named: "pulovaNota"), UIImage(named: "ctvrtovaNota"), UIImage(named: "osminovaNota"), UIImage(named: "sestnactinovaNota"), UIImage(named: "dvaatricetinovaNota"), UIImage(named: "pulovaSTeckouNota"), UIImage(named: "ctvrtovaSTeckouNota")]
+   
     @IBAction func nextButton(_ sender: Any) {
-        let notyArray = [UIImage(named: "celaNota"), UIImage(named: "pulovaNota"), UIImage(named: "ctvrtovaNota"), UIImage(named: "osminovaNota"), UIImage(named: "sestnactinovaNota"), UIImage(named: "dvaatricetinovaNota"), UIImage(named: "pulovaSTeckouNota"), UIImage(named: "ctvrtovaSTeckouNota")]
-        
-        imageView.image = notyArray[Int.random(in: 0...7)]
+        correctAnswer = Int.random(in: 0...7)
+        imageView.image = notyArray[correctAnswer]
         
     }
     
     
     
     @IBAction func celaNotaButton(_ sender: UIButton) {
+        if correctAnswer == sender.tag {
+            sender.backgroundColor = UIColor.green
+        } else {
+            sender.backgroundColor = UIColor.red
+        }
+        
     }
     
     @IBAction func pulovaNotaButton(_ sender: UIButton) {
+        if correctAnswer == sender.tag {
+            sender.backgroundColor = UIColor.green
+        } else {
+            sender.backgroundColor = UIColor.red
+        }
     }
     @IBAction func ctvrtovaNotaButton(_ sender: UIButton) {
+        if correctAnswer == sender.tag {
+            sender.backgroundColor = UIColor.green
+        } else {
+            sender.backgroundColor = UIColor.red
+        }
     }
     
     @IBAction func osminovaNotaButton(_ sender: UIButton) {
+        if correctAnswer == sender.tag {
+            sender.backgroundColor = UIColor.green
+        } else {
+            sender.backgroundColor = UIColor.red
+        }
     }
     
     @IBAction func sestnactinovaNotaButton(_ sender: UIButton) {
+        if correctAnswer == sender.tag {
+            sender.backgroundColor = UIColor.green
+        } else {
+            sender.backgroundColor = UIColor.red
+        }
     }
     
-    @IBAction func dvaatricetinovaNotaButton(_ sender: Any) {
+    @IBAction func dvaatricetinovaNotaButton(_ sender: UIButton) {
+        if correctAnswer == sender.tag {
+            sender.backgroundColor = UIColor.green
+        } else {
+            sender.backgroundColor = UIColor.red
+        }
     }
     
+    @IBAction func pulovaNotaSTeckouButton(_ sender: UIButton) {
+        if correctAnswer == sender.tag {
+            sender.backgroundColor = UIColor.green
+        } else {
+            sender.backgroundColor = UIColor.red
+        }
+    }
     
+    @IBAction func ctvrtovaNotaSTeckouButton(_ sender: UIButton) {
+        if correctAnswer == sender.tag {
+            sender.backgroundColor = UIColor.green
+        } else {
+            sender.backgroundColor = UIColor.red
+        }
+    }
     
     @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
