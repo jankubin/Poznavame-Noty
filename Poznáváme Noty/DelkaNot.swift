@@ -10,4 +10,16 @@ import UIKit
 
 class DelkaNot: UIViewController {
     
+    
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+    }
+    
 }
+
+
+
