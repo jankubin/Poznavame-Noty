@@ -10,6 +10,9 @@ import UIKit
 class ViewController: UIViewController {
     var correctAnswer = 1
     let notyArray = [UIImage(named: "celaNota"), UIImage(named: "pulovaNota"), UIImage(named: "ctvrtovaNota"), UIImage(named: "osminovaNota"), UIImage(named: "sestnactinovaNota"), UIImage(named: "dvaatricetinovaNota"), UIImage(named: "pulovaSTeckouNota"), UIImage(named: "ctvrtovaSTeckouNota")]
+    
+  
+   
    
     @IBAction func nextButton(_ sender: Any) {
         generateNext()
@@ -18,6 +21,9 @@ class ViewController: UIViewController {
     func generateNext() {
         correctAnswer = Int.random(in: 0...7)
         imageView.image = notyArray[correctAnswer]
+        allButtons.forEach
+        {$0.backgroundColor = .white}
+        
     }
     
     
@@ -70,13 +76,16 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func pulovaNotaSTeckouButton(_ sender: UIButton) {
+   @IBAction func pulovaNotaSTeckouButton(_ sender: UIButton) {
         if correctAnswer == sender.tag {
             sender.backgroundColor = UIColor.green
         } else {
             sender.backgroundColor = UIColor.red
         }
     }
+    
+    @IBOutlet var allButtons: [UIButton]!
+    
     
     @IBAction func ctvrtovaNotaSTeckouButton(_ sender: UIButton) {
         if correctAnswer == sender.tag {
