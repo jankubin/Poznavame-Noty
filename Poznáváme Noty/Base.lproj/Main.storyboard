@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="R3L-km-SGO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="u7Z-Vq-7gX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -12,7 +12,7 @@
         <scene sceneID="d8r-dR-8ho">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXQ-bC-svE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController id="x3U-hN-N1R" sceneMemberID="viewController">
+                <viewController id="x3U-hN-N1R" customClass="DelkaNot" customModule="Pozna_va_me_Noty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IIy-0z-BTp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,10 +21,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FLA-zg-12Y">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="di9-Rq-gI4">
-                                        <rect key="frame" x="0.0" y="52" width="414" height="250"/>
+                                        <rect key="frame" x="0.0" y="96" width="414" height="118"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="celaNota" translatesAutoresizingMaskIntoConstraints="NO" id="A38-CC-QU1">
                                                 <rect key="frame" x="34" y="8" width="347" height="242"/>
@@ -33,7 +33,7 @@
                                         </subviews>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a0W-s0-paJ">
-                                        <rect key="frame" x="0.0" y="310" width="414" height="104"/>
+                                        <rect key="frame" x="0.0" y="222" width="414" height="104"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popis" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVi-yv-AVi">
                                                 <rect key="frame" x="8" y="8" width="398" height="76"/>
@@ -59,7 +59,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E5Y-Cv-qxt">
-                                        <rect key="frame" x="0.0" y="422" width="414" height="321"/>
+                                        <rect key="frame" x="0.0" y="334" width="414" height="321"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAd-Yq-fi1">
                                                 <rect key="frame" x="8" y="8" width="398" height="34"/>
@@ -69,7 +69,7 @@
                                                 </constraints>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="gray" title="Celá nota"/>
+                                                <buttonConfiguration key="configuration" style="gray" image="music.quarternote.3" catalog="system" title="Celá nota"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgW-Pe-Grm">
                                                 <rect key="frame" x="8" y="46" width="398" height="34"/>
@@ -79,7 +79,7 @@
                                                 </constraints>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="gray" title="Půlová nota"/>
+                                                <buttonConfiguration key="configuration" style="gray" image="music.quarternote.3" catalog="system" title="Půlová nota"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbK-xm-M2T">
                                                 <rect key="frame" x="8" y="84" width="398" height="34"/>
@@ -89,7 +89,7 @@
                                                 </constraints>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="gray" title="Čtvrťová nota"/>
+                                                <buttonConfiguration key="configuration" style="gray" image="music.quarternote.3" catalog="system" title="Čtvrťová nota"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQ1-aq-qbD">
                                                 <rect key="frame" x="8" y="122" width="398" height="34"/>
@@ -99,7 +99,7 @@
                                                 </constraints>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="gray" title="Osminová nota"/>
+                                                <buttonConfiguration key="configuration" style="gray" image="music.quarternote.3" catalog="system" title="Osminová nota"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1XV-fi-4wd">
                                                 <rect key="frame" x="8" y="160" width="398" height="34"/>
@@ -109,7 +109,7 @@
                                                 </constraints>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="gray" title="Šestnáctinová nota"/>
+                                                <buttonConfiguration key="configuration" style="gray" image="music.quarternote.3" catalog="system" title="Šestnáctinová nota"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czS-3D-DUc">
                                                 <rect key="frame" x="8" y="198" width="398" height="34"/>
@@ -119,7 +119,7 @@
                                                 </constraints>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="gray" title="Dvaatřicetinová nota"/>
+                                                <buttonConfiguration key="configuration" style="gray" image="music.quarternote.3" catalog="system" title="Dvaatřicetinová nota"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6m-rT-QRH">
                                                 <rect key="frame" x="8" y="236" width="398" height="34"/>
@@ -129,7 +129,7 @@
                                                 </constraints>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="gray" title="Půlová nota s tečkou"/>
+                                                <buttonConfiguration key="configuration" style="gray" image="music.quarternote.3" catalog="system" title="Půlová nota s tečkou"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avW-Wc-9pj">
                                                 <rect key="frame" x="8" y="274" width="398" height="34"/>
@@ -139,7 +139,7 @@
                                                 </constraints>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="gray" title="Čtvrťová nota s tečkou"/>
+                                                <buttonConfiguration key="configuration" style="gray" image="music.quarternote.3" catalog="system" title="Čtvrťová nota s tečkou"/>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -207,16 +207,231 @@
                             <constraint firstAttribute="bottom" secondItem="anU-tN-4oJ" secondAttribute="bottom" id="jJQ-xr-GxF"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Délka not" id="E1M-wJ-eUZ"/>
+                    <tabBarItem key="tabBarItem" title="Délka not" image="book" catalog="system" id="E1M-wJ-eUZ"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="-631.8840579710145" y="371.65178571428572"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="ciO-31-x1P">
+            <objects>
+                <viewController id="MpT-oX-dPn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VuY-Pr-w1U">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="qJy-dm-Smt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="hEs-I2-BCd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DuB-0I-W4Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-633" y="-962"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="biL-VV-uTb">
+            <objects>
+                <viewController id="bT6-42-bRN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wSn-xM-aGO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="QUu-yr-3Nk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="T6J-HW-ukD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZFD-9t-Xi5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-633" y="-1592"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="RKm-i5-b99">
+            <objects>
+                <tabBarController id="m2x-Rn-u7Z" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="nXs-t7-i7X"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PFc-ns-0BU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="bT6-42-bRN" kind="relationship" relationship="viewControllers" id="l0S-VK-vRT"/>
+                        <segue destination="MpT-oX-dPn" kind="relationship" relationship="viewControllers" id="qsa-fp-ZkF"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Weu-vN-3Qn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2262" y="-659"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4zy-X3-ggX">
+            <objects>
+                <navigationController id="u7Z-Vq-7gX" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ri8-Tf-8Up">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="DGD-h3-Cjw" kind="relationship" relationship="rootViewController" id="rHJ-GO-2IM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ozp-At-gwO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3155" y="81"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="99E-lj-Fwh">
+            <objects>
+                <viewController id="DGD-h3-Cjw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Px-Hc-NSx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GMN-Rl-NfK">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9a-qH-Cey">
+                                <rect key="frame" x="20" y="150" width="374" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="lt3-Jn-7Cr"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="uRx-QZ-Mw6"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Délka pomlk"/>
+                                <connections>
+                                    <segue destination="m2x-Rn-u7Z" kind="show" id="Egf-gZ-20t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gk5-S0-rMt">
+                                <rect key="frame" x="20" y="189" width="374" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="KSL-9Y-bv6"/>
+                                    <constraint firstAttribute="height" constant="31" id="sBB-ae-Wgc"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Délka not"/>
+                                <connections>
+                                    <segue destination="R3L-km-SGO" kind="show" id="Akj-10-Wnf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNt-xM-Ulc">
+                                <rect key="frame" x="20" y="228" width="374" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="2Jh-VR-gmk"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="J8j-ce-UQ1"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="teW-RJ-rl5">
+                                <rect key="frame" x="20" y="267" width="374" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="Fna-I8-6HX"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="vQK-Rf-kVp"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72M-9C-HbX">
+                                <rect key="frame" x="20" y="306" width="374" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="CTe-TN-pos"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="orr-we-egE"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EgB-wN-EYY">
+                                <rect key="frame" x="20" y="345" width="374" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="Ebv-26-D8k"/>
+                                    <constraint firstAttribute="height" constant="31" id="UZx-Dw-f9N"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCM-1o-ZEQ">
+                                <rect key="frame" x="20" y="384" width="374" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="7sT-uj-8MP"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="kVo-eb-fyf"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrv-rZ-z5x">
+                                <rect key="frame" x="20" y="423" width="374" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="Hw8-rM-M52"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="Pn9-iN-b8Y"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AHx-sk-bcG">
+                                <rect key="frame" x="100" y="68" width="223" height="69"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Poznáváme Noty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbq-ic-Oh4">
+                                        <rect key="frame" x="20" y="20" width="183" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="wbq-ic-Oh4" firstAttribute="centerY" secondItem="AHx-sk-bcG" secondAttribute="centerY" id="8TU-Uc-q4c"/>
+                                    <constraint firstItem="wbq-ic-Oh4" firstAttribute="centerX" secondItem="AHx-sk-bcG" secondAttribute="centerX" id="Ubx-BQ-jtD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mVj-P1-1EN"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="mVj-P1-1EN" firstAttribute="trailing" secondItem="cCM-1o-ZEQ" secondAttribute="trailing" constant="20" id="1my-YL-QXC"/>
+                            <constraint firstItem="EgB-wN-EYY" firstAttribute="top" secondItem="72M-9C-HbX" secondAttribute="bottom" constant="8" symbolic="YES" id="4Gu-RS-pln"/>
+                            <constraint firstItem="GMN-Rl-NfK" firstAttribute="leading" secondItem="1Px-Hc-NSx" secondAttribute="leading" id="CW5-io-ewe"/>
+                            <constraint firstItem="mVj-P1-1EN" firstAttribute="trailing" secondItem="72M-9C-HbX" secondAttribute="trailing" constant="20" id="HvF-Z6-Ura"/>
+                            <constraint firstItem="EgB-wN-EYY" firstAttribute="leading" secondItem="mVj-P1-1EN" secondAttribute="leading" constant="20" id="LuS-0z-Bf8"/>
+                            <constraint firstItem="EgB-wN-EYY" firstAttribute="top" secondItem="1Px-Hc-NSx" secondAttribute="top" constant="345" id="R8t-bS-ugV"/>
+                            <constraint firstItem="wrv-rZ-z5x" firstAttribute="centerX" secondItem="GMN-Rl-NfK" secondAttribute="centerX" id="RC8-h4-PcO"/>
+                            <constraint firstItem="DNt-xM-Ulc" firstAttribute="top" secondItem="Gk5-S0-rMt" secondAttribute="bottom" constant="8" symbolic="YES" id="USj-mR-xF1"/>
+                            <constraint firstItem="mVj-P1-1EN" firstAttribute="trailing" secondItem="e9a-qH-Cey" secondAttribute="trailing" constant="20" id="Z83-8x-Fqj"/>
+                            <constraint firstItem="wrv-rZ-z5x" firstAttribute="leading" secondItem="mVj-P1-1EN" secondAttribute="leading" constant="20" id="apM-WZ-FoP"/>
+                            <constraint firstItem="AHx-sk-bcG" firstAttribute="top" secondItem="1Px-Hc-NSx" secondAttribute="topMargin" constant="-20" id="bkL-i5-UsS"/>
+                            <constraint firstItem="Gk5-S0-rMt" firstAttribute="leading" secondItem="mVj-P1-1EN" secondAttribute="leading" constant="20" id="cc0-ye-QNl"/>
+                            <constraint firstItem="e9a-qH-Cey" firstAttribute="leading" secondItem="mVj-P1-1EN" secondAttribute="leading" constant="20" id="cpp-JO-reo"/>
+                            <constraint firstItem="72M-9C-HbX" firstAttribute="leading" secondItem="mVj-P1-1EN" secondAttribute="leading" constant="20" id="dAq-Ci-HuG"/>
+                            <constraint firstItem="cCM-1o-ZEQ" firstAttribute="leading" secondItem="mVj-P1-1EN" secondAttribute="leading" constant="20" id="fJS-g7-OWT"/>
+                            <constraint firstItem="mVj-P1-1EN" firstAttribute="trailing" secondItem="AHx-sk-bcG" secondAttribute="trailing" constant="91" id="fc0-44-iqw"/>
+                            <constraint firstItem="EgB-wN-EYY" firstAttribute="centerX" secondItem="GMN-Rl-NfK" secondAttribute="centerX" id="gcl-yR-dqY"/>
+                            <constraint firstItem="Gk5-S0-rMt" firstAttribute="top" secondItem="1Px-Hc-NSx" secondAttribute="top" constant="189" id="hpi-ca-HzB"/>
+                            <constraint firstItem="e9a-qH-Cey" firstAttribute="top" secondItem="AHx-sk-bcG" secondAttribute="bottom" constant="13" id="hzJ-s3-PmE"/>
+                            <constraint firstItem="Gk5-S0-rMt" firstAttribute="top" secondItem="e9a-qH-Cey" secondAttribute="bottom" constant="8" symbolic="YES" id="ile-T9-xRM"/>
+                            <constraint firstItem="teW-RJ-rl5" firstAttribute="centerX" secondItem="GMN-Rl-NfK" secondAttribute="centerX" id="jz7-hE-paO"/>
+                            <constraint firstItem="cCM-1o-ZEQ" firstAttribute="top" secondItem="EgB-wN-EYY" secondAttribute="bottom" constant="8" symbolic="YES" id="lpk-Gd-VEE"/>
+                            <constraint firstItem="teW-RJ-rl5" firstAttribute="top" secondItem="DNt-xM-Ulc" secondAttribute="bottom" constant="8" symbolic="YES" id="mCi-Qg-6a2"/>
+                            <constraint firstItem="AHx-sk-bcG" firstAttribute="leading" secondItem="mVj-P1-1EN" secondAttribute="leading" constant="100" id="nbO-6t-nSK"/>
+                            <constraint firstItem="GMN-Rl-NfK" firstAttribute="top" secondItem="1Px-Hc-NSx" secondAttribute="top" id="or5-zK-k6H"/>
+                            <constraint firstItem="wrv-rZ-z5x" firstAttribute="top" secondItem="cCM-1o-ZEQ" secondAttribute="bottom" constant="8" symbolic="YES" id="pFJ-xr-NBB"/>
+                            <constraint firstItem="teW-RJ-rl5" firstAttribute="leading" secondItem="mVj-P1-1EN" secondAttribute="leading" constant="20" id="vde-fs-LjB"/>
+                            <constraint firstItem="mVj-P1-1EN" firstAttribute="trailing" secondItem="DNt-xM-Ulc" secondAttribute="trailing" constant="20" id="wEk-Gd-DQh"/>
+                            <constraint firstAttribute="bottom" secondItem="GMN-Rl-NfK" secondAttribute="bottom" id="yLM-rO-aaW"/>
+                            <constraint firstItem="Gk5-S0-rMt" firstAttribute="centerX" secondItem="GMN-Rl-NfK" secondAttribute="centerX" id="zGe-90-n9f"/>
+                            <constraint firstItem="DNt-xM-Ulc" firstAttribute="leading" secondItem="mVj-P1-1EN" secondAttribute="leading" constant="20" id="zdH-eF-6CE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cjS-so-ba2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G4c-LF-P77" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2286.9565217391305" y="84.375"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="wlQ-Tj-Za1">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QIF-Le-dWa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController id="R3L-km-SGO" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="qpQ-dM-YYT"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WOS-aQ-XZP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -242,7 +457,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="K1m-8H-NCs">
-                                        <rect key="frame" x="0.0" y="0.0" width="439.5" height="896"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="439.5" height="808"/>
                                     </stackView>
                                 </subviews>
                                 <constraints>
@@ -258,7 +473,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="dOE-gf-iFp"/>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cgd-TN-mbt">
-                                <rect key="frame" x="-4" y="44" width="398" height="289"/>
+                                <rect key="frame" x="-4" y="88" width="398" height="245"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="osminovaNota" translatesAutoresizingMaskIntoConstraints="NO" id="BKK-Bo-aXB">
                                         <rect key="frame" x="74" y="18" width="250" height="250"/>
@@ -285,7 +500,7 @@
                                         </constraints>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="Dvaatřicetinová nota"/>
+                                        <buttonConfiguration key="configuration" style="gray" image="music.quarternote.3" catalog="system" title="Dvaatřicetinová nota"/>
                                         <connections>
                                             <action selector="dvaatricetinovaNotaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sz7-vO-hLP"/>
                                         </connections>
@@ -297,7 +512,7 @@
                                         </constraints>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="Šestnáctinová nota"/>
+                                        <buttonConfiguration key="configuration" style="gray" image="music.quarternote.3" catalog="system" title="Šestnáctinová nota"/>
                                         <connections>
                                             <action selector="sestnactinovaNotaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jdx-jR-le8"/>
                                         </connections>
@@ -309,7 +524,7 @@
                                         </constraints>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="Půlová nota s tečkou"/>
+                                        <buttonConfiguration key="configuration" style="gray" image="music.quarternote.3" catalog="system" title="Půlová nota s tečkou"/>
                                         <connections>
                                             <action selector="pulovaNotaSTeckouButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ipq-4g-Sqw"/>
                                         </connections>
@@ -321,7 +536,7 @@
                                         </constraints>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="Půlová nota"/>
+                                        <buttonConfiguration key="configuration" style="gray" image="music.quarternote.3" catalog="system" title="Půlová nota"/>
                                         <connections>
                                             <action selector="pulovaNotaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HUd-Tk-g5h"/>
                                         </connections>
@@ -335,7 +550,7 @@
                                         </constraints>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="Celá nota"/>
+                                        <buttonConfiguration key="configuration" style="gray" image="music.quarternote.3" catalog="system" title="Celá nota"/>
                                         <connections>
                                             <action selector="celaNotaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gqL-VX-WCs"/>
                                         </connections>
@@ -347,7 +562,7 @@
                                         </constraints>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="Osminová nota"/>
+                                        <buttonConfiguration key="configuration" style="gray" image="music.quarternote.3" catalog="system" title="Osminová nota"/>
                                         <connections>
                                             <action selector="osminovaNotaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UFI-Sl-aaf"/>
                                         </connections>
@@ -359,7 +574,7 @@
                                         </constraints>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="Čtvrťová nota s tečkou"/>
+                                        <buttonConfiguration key="configuration" style="gray" image="music.quarternote.3" catalog="system" title="Čtvrťová nota s tečkou"/>
                                         <connections>
                                             <action selector="ctvrtovaNotaSTeckouButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xvl-be-InY"/>
                                         </connections>
@@ -371,7 +586,7 @@
                                         </constraints>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="Čtvrťová nota"/>
+                                        <buttonConfiguration key="configuration" style="gray" image="music.quarternote.3" catalog="system" title="Čtvrťová nota"/>
                                         <connections>
                                             <action selector="ctvrtovaNotaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ipJ-dn-lVa"/>
                                         </connections>
@@ -449,7 +664,7 @@
                             <constraint firstItem="gZh-Bf-M9t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="whd-oq-5Ng"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Quiz" id="Hmz-x8-a5h"/>
+                    <tabBarItem key="tabBarItem" title="Quiz" image="questionmark" catalog="system" id="Hmz-x8-a5h"/>
                     <connections>
                         <outlet property="imageView" destination="BKK-Bo-aXB" id="CoA-YY-ZCC"/>
                         <outletCollection property="allButtons" destination="oo3-LN-SRQ" collectionClass="NSMutableArray" id="mLj-tA-VwY"/>
@@ -468,8 +683,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="book" catalog="system" width="128" height="99"/>
         <image name="celaNota" width="341" height="341"/>
+        <image name="music.quarternote.3" catalog="system" width="128" height="103"/>
         <image name="osminovaNota" width="341" height="341"/>
+        <image name="questionmark" catalog="system" width="96" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

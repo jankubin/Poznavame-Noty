@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		114DA83828BA59A900551C1C /* DelkaNot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114DA83728BA59A900551C1C /* DelkaNot.swift */; };
 		1164748528A008C700A0FE2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1164748428A008C700A0FE2D /* AppDelegate.swift */; };
 		1164748728A008C700A0FE2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1164748628A008C700A0FE2D /* SceneDelegate.swift */; };
 		1164748928A008C700A0FE2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1164748828A008C700A0FE2D /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		114DA83728BA59A900551C1C /* DelkaNot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelkaNot.swift; sourceTree = "<group>"; };
 		1164748128A008C700A0FE2D /* Poznáváme Noty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poznáváme Noty.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1164748428A008C700A0FE2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1164748628A008C700A0FE2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				1164748428A008C700A0FE2D /* AppDelegate.swift */,
 				1164748628A008C700A0FE2D /* SceneDelegate.swift */,
 				1164748828A008C700A0FE2D /* ViewController.swift */,
+				114DA83728BA59A900551C1C /* DelkaNot.swift */,
 				1164748A28A008C700A0FE2D /* Main.storyboard */,
 				1164748D28A008C700A0FE2D /* Assets.xcassets */,
 				1164748F28A008C700A0FE2D /* LaunchScreen.storyboard */,
@@ -151,6 +154,7 @@
 				1164748928A008C700A0FE2D /* ViewController.swift in Sources */,
 				1164748528A008C700A0FE2D /* AppDelegate.swift in Sources */,
 				1164748728A008C700A0FE2D /* SceneDelegate.swift in Sources */,
+				114DA83828BA59A900551C1C /* DelkaNot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
