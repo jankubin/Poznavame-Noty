@@ -12,7 +12,7 @@
         <scene sceneID="d8r-dR-8ho">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXQ-bC-svE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController id="x3U-hN-N1R" customClass="DelkaNot" customModule="Pozna_va_me_Noty" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="x3U-hN-N1R" customClass="DelkaNotViewController" customModule="Pozna_va_me_Noty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IIy-0z-BTp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,7 +24,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="di9-Rq-gI4">
-                                        <rect key="frame" x="0.0" y="96" width="414" height="118"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="celaNota" translatesAutoresizingMaskIntoConstraints="NO" id="A38-CC-QU1">
                                                 <rect key="frame" x="34" y="8" width="347" height="242"/>
@@ -33,9 +33,9 @@
                                         </subviews>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a0W-s0-paJ">
-                                        <rect key="frame" x="0.0" y="222" width="414" height="104"/>
+                                        <rect key="frame" x="0.0" y="258" width="414" height="68"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popis" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVi-yv-AVi">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popis" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVi-yv-AVi">
                                                 <rect key="frame" x="8" y="8" width="398" height="76"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="398" id="0O9-hq-hBG"/>
@@ -54,8 +54,8 @@
                                             <constraint firstItem="sVi-yv-AVi" firstAttribute="top" secondItem="a0W-s0-paJ" secondAttribute="topMargin" id="CR4-Is-grb"/>
                                             <constraint firstItem="sVi-yv-AVi" firstAttribute="leading" secondItem="a0W-s0-paJ" secondAttribute="leadingMargin" id="Wy4-3Y-7CU"/>
                                             <constraint firstAttribute="trailing" secondItem="sVi-yv-AVi" secondAttribute="trailing" constant="8" id="f2m-5t-gZq"/>
-                                            <constraint firstAttribute="bottom" secondItem="sVi-yv-AVi" secondAttribute="bottom" constant="20" id="kHV-48-1NX"/>
-                                            <constraint firstAttribute="bottom" secondItem="sVi-yv-AVi" secondAttribute="bottom" constant="20" symbolic="YES" id="xF6-5u-YJs"/>
+                                            <constraint firstAttribute="bottom" secondItem="sVi-yv-AVi" secondAttribute="bottom" constant="-16" id="kHV-48-1NX"/>
+                                            <constraint firstAttribute="bottom" secondItem="sVi-yv-AVi" secondAttribute="bottom" constant="-16" id="xF6-5u-YJs"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E5Y-Cv-qxt">
@@ -70,6 +70,9 @@
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" image="music.quarternote.3" catalog="system" title="Celá nota"/>
+                                                <connections>
+                                                    <action selector="celaNotaButton:" destination="x3U-hN-N1R" eventType="touchUpInside" id="hM7-vh-5dd"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgW-Pe-Grm">
                                                 <rect key="frame" x="8" y="46" width="398" height="34"/>
@@ -80,6 +83,9 @@
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" image="music.quarternote.3" catalog="system" title="Půlová nota"/>
+                                                <connections>
+                                                    <action selector="pulovaNotaButton:" destination="x3U-hN-N1R" eventType="touchUpInside" id="CDy-7T-FK2"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbK-xm-M2T">
                                                 <rect key="frame" x="8" y="84" width="398" height="34"/>
@@ -90,6 +96,9 @@
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" image="music.quarternote.3" catalog="system" title="Čtvrťová nota"/>
+                                                <connections>
+                                                    <action selector="ctvrtovaNotaButton:" destination="x3U-hN-N1R" eventType="touchUpInside" id="loQ-0b-3VH"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQ1-aq-qbD">
                                                 <rect key="frame" x="8" y="122" width="398" height="34"/>
@@ -100,6 +109,9 @@
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" image="music.quarternote.3" catalog="system" title="Osminová nota"/>
+                                                <connections>
+                                                    <action selector="osminovaNotaButton:" destination="x3U-hN-N1R" eventType="touchUpInside" id="cqQ-UG-I3F"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1XV-fi-4wd">
                                                 <rect key="frame" x="8" y="160" width="398" height="34"/>
@@ -110,6 +122,9 @@
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" image="music.quarternote.3" catalog="system" title="Šestnáctinová nota"/>
+                                                <connections>
+                                                    <action selector="sestnactinovaNotaButton:" destination="x3U-hN-N1R" eventType="touchUpInside" id="ros-aZ-cbs"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czS-3D-DUc">
                                                 <rect key="frame" x="8" y="198" width="398" height="34"/>
@@ -120,6 +135,9 @@
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" image="music.quarternote.3" catalog="system" title="Dvaatřicetinová nota"/>
+                                                <connections>
+                                                    <action selector="dvaatricetinovaNotaButton:" destination="x3U-hN-N1R" eventType="touchUpInside" id="Xh6-RA-A0W"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6m-rT-QRH">
                                                 <rect key="frame" x="8" y="236" width="398" height="34"/>
@@ -130,6 +148,9 @@
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" image="music.quarternote.3" catalog="system" title="Půlová nota s tečkou"/>
+                                                <connections>
+                                                    <action selector="pulovaNotaSTeckouButton:" destination="x3U-hN-N1R" eventType="touchUpInside" id="M1U-kQ-FSz"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avW-Wc-9pj">
                                                 <rect key="frame" x="8" y="274" width="398" height="34"/>
@@ -140,6 +161,9 @@
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" image="music.quarternote.3" catalog="system" title="Čtvrťová nota s tečkou"/>
+                                                <connections>
+                                                    <action selector="ctvrtovaNotaSTeckouButton:" destination="x3U-hN-N1R" eventType="touchUpInside" id="zEf-yv-nkU"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -175,8 +199,10 @@
                                     </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="di9-Rq-gI4" firstAttribute="top" secondItem="jsc-JG-3Hd" secondAttribute="top" id="3Av-cU-fkK"/>
+                                    <constraint firstItem="di9-Rq-gI4" firstAttribute="trailing" secondItem="a0W-s0-paJ" secondAttribute="trailing" id="8ds-pQ-cS7"/>
+                                    <constraint firstItem="a0W-s0-paJ" firstAttribute="top" secondItem="di9-Rq-gI4" secondAttribute="bottom" constant="8" id="BOy-bj-45f"/>
                                     <constraint firstItem="FLA-zg-12Y" firstAttribute="width" secondItem="34R-aI-7co" secondAttribute="width" id="E24-vB-SEW"/>
-                                    <constraint firstItem="di9-Rq-gI4" firstAttribute="top" secondItem="anU-tN-4oJ" secondAttribute="topMargin" id="F8J-2R-TRR"/>
                                     <constraint firstItem="jsc-JG-3Hd" firstAttribute="trailing" secondItem="FLA-zg-12Y" secondAttribute="trailing" id="MZa-Pl-iOy"/>
                                     <constraint firstItem="E5Y-Cv-qxt" firstAttribute="leading" secondItem="a0W-s0-paJ" secondAttribute="leading" id="N6b-Np-Jyu"/>
                                     <constraint firstItem="E5Y-Cv-qxt" firstAttribute="leading" secondItem="FLA-zg-12Y" secondAttribute="leading" id="NNZ-YF-3gE"/>
@@ -185,11 +211,9 @@
                                     <constraint firstItem="E5Y-Cv-qxt" firstAttribute="top" secondItem="a0W-s0-paJ" secondAttribute="bottom" constant="8" id="UGB-lw-uJd"/>
                                     <constraint firstAttribute="trailing" secondItem="E5Y-Cv-qxt" secondAttribute="trailing" id="Vqh-1O-ajY"/>
                                     <constraint firstItem="34R-aI-7co" firstAttribute="bottom" secondItem="E5Y-Cv-qxt" secondAttribute="bottom" constant="153" id="Wa9-Qx-26x"/>
-                                    <constraint firstItem="E5Y-Cv-qxt" firstAttribute="trailing" secondItem="di9-Rq-gI4" secondAttribute="trailing" id="XIa-NZ-8hD"/>
                                     <constraint firstItem="E5Y-Cv-qxt" firstAttribute="trailing" secondItem="a0W-s0-paJ" secondAttribute="trailing" id="b1p-8w-sQc"/>
                                     <constraint firstItem="FLA-zg-12Y" firstAttribute="top" secondItem="jsc-JG-3Hd" secondAttribute="top" id="d7L-Ng-AS9"/>
-                                    <constraint firstItem="E5Y-Cv-qxt" firstAttribute="leading" secondItem="di9-Rq-gI4" secondAttribute="leading" id="dHo-B6-lLt"/>
-                                    <constraint firstItem="a0W-s0-paJ" firstAttribute="top" secondItem="di9-Rq-gI4" secondAttribute="bottom" constant="8" symbolic="YES" id="hnQ-1v-ZGw"/>
+                                    <constraint firstItem="di9-Rq-gI4" firstAttribute="leading" secondItem="a0W-s0-paJ" secondAttribute="leading" id="eaN-39-fWb"/>
                                     <constraint firstAttribute="bottom" secondItem="E5Y-Cv-qxt" secondAttribute="bottom" constant="153" id="jj1-tK-2Ua"/>
                                     <constraint firstItem="FLA-zg-12Y" firstAttribute="leading" secondItem="jsc-JG-3Hd" secondAttribute="leading" id="tA4-qE-jSc"/>
                                     <constraint firstItem="jsc-JG-3Hd" firstAttribute="bottom" secondItem="FLA-zg-12Y" secondAttribute="bottom" id="xMf-0p-AZ1"/>
@@ -208,6 +232,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Délka not" image="book" catalog="system" id="E1M-wJ-eUZ"/>
+                    <connections>
+                        <outlet property="imageView" destination="A38-CC-QU1" id="FGn-7B-3xT"/>
+                        <outlet property="popisTxt" destination="sVi-yv-AVi" id="0e7-Ba-19C"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="-631.8840579710145" y="371.65178571428572"/>
@@ -231,7 +259,7 @@
         <!--Item 1-->
         <scene sceneID="biL-VV-uTb">
             <objects>
-                <viewController id="bT6-42-bRN" sceneMemberID="viewController">
+                <viewController id="bT6-42-bRN" customClass="DelkaPomlk" customModule="Pozna_va_me_Noty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wSn-xM-aGO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -476,7 +504,7 @@
                                 <rect key="frame" x="-4" y="88" width="398" height="245"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="osminovaNota" translatesAutoresizingMaskIntoConstraints="NO" id="BKK-Bo-aXB">
-                                        <rect key="frame" x="74" y="18" width="250" height="250"/>
+                                        <rect key="frame" x="74" y="-13" width="250" height="250"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="250" id="6Xt-fT-lWX"/>
                                             <constraint firstAttribute="width" constant="250" id="Is1-jg-gjR"/>
@@ -485,7 +513,7 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="BKK-Bo-aXB" secondAttribute="trailing" constant="74" id="QFY-JX-2rj"/>
-                                    <constraint firstItem="BKK-Bo-aXB" firstAttribute="top" secondItem="cgd-TN-mbt" secondAttribute="top" constant="18" id="T8T-3h-YJw"/>
+                                    <constraint firstItem="BKK-Bo-aXB" firstAttribute="top" secondItem="cgd-TN-mbt" secondAttribute="top" constant="-13" id="T8T-3h-YJw"/>
                                     <constraint firstItem="BKK-Bo-aXB" firstAttribute="leading" secondItem="cgd-TN-mbt" secondAttribute="leading" constant="74" id="U2h-cq-TnC"/>
                                     <constraint firstAttribute="width" constant="398" id="u6B-Zr-iW2"/>
                                 </constraints>
