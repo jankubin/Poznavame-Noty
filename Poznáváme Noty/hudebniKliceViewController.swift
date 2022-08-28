@@ -15,17 +15,17 @@ class hudebniKliceViewController: UIViewController {
     
     @IBAction func houslovyKlicButton(_ sender: Any) {
         imageView.image = UIImage(named: "houslovyKlic")
-        popisTxt.text = "G klíč neboli houslový klíč se používá většinou pro notový zápis partu houslí, vysokých dechových nástrojů a pravé ruky piána."
+        popisTxt.text = "G klíč (Houslový klíč) Nota G1 se nachází na druhé lince odspodu, tedy na místě, odkud klíč jakoby začíná."
     }
     
     @IBAction func basovyKlicButton(_ sender: Any) {
         imageView.image = UIImage(named: "basovyKlic")
-        popisTxt.text = "F klíč neboli basový klíč se používá pro notový zápis partu violoncella, kontrabasu, nízkých dechových nástrojů."
+        popisTxt.text = "F klíč (basový klíč) F malé se je na druhé lince odshora."
     }
     
     @IBAction func violovyKlicButton(_ sender: Any) {
         imageView.image = UIImage(named: "violovyKlic")
-        popisTxt.text = "C klíč neboli violový klíč. Referenční tón u C klíče je c¹, jeho polohu určuje střed klíče."}
+        popisTxt.text = "C klíč Nota C je přímo ve středu klíče, na obrázku tedy na třetí lince. C klíč se může ale také nacházet níže, či výše: dle toho se také jinde nachází nota C."}
         
     
     override func viewDidLoad() {
