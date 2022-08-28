@@ -15,7 +15,7 @@ class hudebniKliceViewController: UIViewController {
     
     @IBAction func houslovyKlicButton(_ sender: Any) {
         imageView.image = UIImage(named: "houslovyKlic")
-        popisTxt.text = "G klíč neboli houslový klíč se používá většinou pro notový zápis partu houslí, vysokých dechových nástrojů."
+        popisTxt.text = "G klíč neboli houslový klíč se používá většinou pro notový zápis partu houslí, vysokých dechových nástrojů a pravé ruky piána."
     }
     
     @IBAction func basovyKlicButton(_ sender: Any) {
@@ -25,7 +25,7 @@ class hudebniKliceViewController: UIViewController {
     
     @IBAction func violovyKlicButton(_ sender: Any) {
         imageView.image = UIImage(named: "violovyKlic")
-        popisTxt.text = "C klíč neboli violový klíč. Referenční tón u C klíče je c¹, jeho polohu určuje střed klíče. "}
+        popisTxt.text = "C klíč neboli violový klíč. Referenční tón u C klíče je c¹, jeho polohu určuje střed klíče."}
         
     
     override func viewDidLoad() {
