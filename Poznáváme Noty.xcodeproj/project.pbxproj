@@ -59,6 +59,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		114DA87128BCD51200551C1C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				114DA86528BB930100551C1C /* NotyHouslovyKlicViewController.swift */,
+				114DA86728BBC21500551C1C /* NotyHouslovyKlicProcvicovaniViewController.swift */,
+				114DA86328BB78AE00551C1C /* HudebniKliceProcvicovaniViewController.swift */,
+				114DA86128BA9FA300551C1C /* hudebniKliceViewController.swift */,
+				114DA85F28BA957900551C1C /* DelkaPomlkProcvicovaniViewController.swift */,
+				114DA85D28BA6FB000551C1C /* DelkaPomlkViewController.swift */,
+				1164748828A008C700A0FE2D /* ViewController.swift */,
+				114DA86928BBC27900551C1C /* NotyBasovyKlicViewController.swift */,
+				114DA86B28BBC28F00551C1C /* NotyBasovyKlicProcvicovaniViewController.swift */,
+				114DA86D28BCD0AD00551C1C /* krizkyViewController.swift */,
+				114DA86F28BCD0C200551C1C /* beckaViewController.swift */,
+				114DA85B28BA66C200551C1C /* DelkaNotViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		1164747828A008C700A0FE2D = {
 			isa = PBXGroup;
 			children = (
@@ -80,18 +99,7 @@
 			children = (
 				1164748428A008C700A0FE2D /* AppDelegate.swift */,
 				1164748628A008C700A0FE2D /* SceneDelegate.swift */,
-				1164748828A008C700A0FE2D /* ViewController.swift */,
-				114DA85B28BA66C200551C1C /* DelkaNotViewController.swift */,
-				114DA85D28BA6FB000551C1C /* DelkaPomlkViewController.swift */,
-				114DA85F28BA957900551C1C /* DelkaPomlkProcvicovaniViewController.swift */,
-				114DA86128BA9FA300551C1C /* hudebniKliceViewController.swift */,
-				114DA86328BB78AE00551C1C /* HudebniKliceProcvicovaniViewController.swift */,
-				114DA86528BB930100551C1C /* NotyHouslovyKlicViewController.swift */,
-				114DA86728BBC21500551C1C /* NotyHouslovyKlicProcvicovaniViewController.swift */,
-				114DA86928BBC27900551C1C /* NotyBasovyKlicViewController.swift */,
-				114DA86B28BBC28F00551C1C /* NotyBasovyKlicProcvicovaniViewController.swift */,
-				114DA86D28BCD0AD00551C1C /* krizkyViewController.swift */,
-				114DA86F28BCD0C200551C1C /* beckaViewController.swift */,
+				114DA87128BCD51200551C1C /* Views */,
 				1164748A28A008C700A0FE2D /* Main.storyboard */,
 				1164748D28A008C700A0FE2D /* Assets.xcassets */,
 				1164748F28A008C700A0FE2D /* LaunchScreen.storyboard */,
