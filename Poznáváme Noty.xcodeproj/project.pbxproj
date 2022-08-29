@@ -16,6 +16,8 @@
 		114DA86828BBC21500551C1C /* NotyHouslovyKlicProcvicovaniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114DA86728BBC21500551C1C /* NotyHouslovyKlicProcvicovaniViewController.swift */; };
 		114DA86A28BBC27900551C1C /* NotyBasovyKlicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114DA86928BBC27900551C1C /* NotyBasovyKlicViewController.swift */; };
 		114DA86C28BBC28F00551C1C /* NotyBasovyKlicProcvicovaniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114DA86B28BBC28F00551C1C /* NotyBasovyKlicProcvicovaniViewController.swift */; };
+		114DA86E28BCD0AE00551C1C /* krizkyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114DA86D28BCD0AD00551C1C /* krizkyViewController.swift */; };
+		114DA87028BCD0C200551C1C /* beckaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114DA86F28BCD0C200551C1C /* beckaViewController.swift */; };
 		1164748528A008C700A0FE2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1164748428A008C700A0FE2D /* AppDelegate.swift */; };
 		1164748728A008C700A0FE2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1164748628A008C700A0FE2D /* SceneDelegate.swift */; };
 		1164748928A008C700A0FE2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1164748828A008C700A0FE2D /* ViewController.swift */; };
@@ -34,6 +36,8 @@
 		114DA86728BBC21500551C1C /* NotyHouslovyKlicProcvicovaniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotyHouslovyKlicProcvicovaniViewController.swift; sourceTree = "<group>"; };
 		114DA86928BBC27900551C1C /* NotyBasovyKlicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotyBasovyKlicViewController.swift; sourceTree = "<group>"; };
 		114DA86B28BBC28F00551C1C /* NotyBasovyKlicProcvicovaniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotyBasovyKlicProcvicovaniViewController.swift; sourceTree = "<group>"; };
+		114DA86D28BCD0AD00551C1C /* krizkyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = krizkyViewController.swift; sourceTree = "<group>"; };
+		114DA86F28BCD0C200551C1C /* beckaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beckaViewController.swift; sourceTree = "<group>"; };
 		1164748128A008C700A0FE2D /* Poznáváme Noty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poznáváme Noty.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1164748428A008C700A0FE2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1164748628A008C700A0FE2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +90,8 @@
 				114DA86728BBC21500551C1C /* NotyHouslovyKlicProcvicovaniViewController.swift */,
 				114DA86928BBC27900551C1C /* NotyBasovyKlicViewController.swift */,
 				114DA86B28BBC28F00551C1C /* NotyBasovyKlicProcvicovaniViewController.swift */,
+				114DA86D28BCD0AD00551C1C /* krizkyViewController.swift */,
+				114DA86F28BCD0C200551C1C /* beckaViewController.swift */,
 				1164748A28A008C700A0FE2D /* Main.storyboard */,
 				1164748D28A008C700A0FE2D /* Assets.xcassets */,
 				1164748F28A008C700A0FE2D /* LaunchScreen.storyboard */,
@@ -178,6 +184,7 @@
 				114DA86C28BBC28F00551C1C /* NotyBasovyKlicProcvicovaniViewController.swift in Sources */,
 				114DA86428BB78AE00551C1C /* HudebniKliceProcvicovaniViewController.swift in Sources */,
 				114DA85C28BA66C200551C1C /* DelkaNotViewController.swift in Sources */,
+				114DA87028BCD0C200551C1C /* beckaViewController.swift in Sources */,
 				114DA86028BA957900551C1C /* DelkaPomlkProcvicovaniViewController.swift in Sources */,
 				114DA86A28BBC27900551C1C /* NotyBasovyKlicViewController.swift in Sources */,
 				114DA85E28BA6FB000551C1C /* DelkaPomlkViewController.swift in Sources */,
@@ -187,6 +194,7 @@
 				1164748728A008C700A0FE2D /* SceneDelegate.swift in Sources */,
 				114DA86628BB930100551C1C /* NotyHouslovyKlicViewController.swift in Sources */,
 				114DA86828BBC21500551C1C /* NotyHouslovyKlicProcvicovaniViewController.swift in Sources */,
+				114DA86E28BCD0AE00551C1C /* krizkyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

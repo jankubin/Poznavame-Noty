@@ -2324,7 +2324,7 @@
         <!--Béčka-->
         <scene sceneID="c8b-YV-N62">
             <objects>
-                <viewController id="JfP-M8-DoP" sceneMemberID="viewController">
+                <viewController id="JfP-M8-DoP" customClass="beckaViewController" customModule="Pozna_va_me_Noty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9sl-UU-MIh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2501,7 +2501,7 @@
         <!--Křížky-->
         <scene sceneID="4qe-hF-nI9">
             <objects>
-                <viewController id="Sge-Jm-MUX" sceneMemberID="viewController">
+                <viewController id="Sge-Jm-MUX" customClass="krizkyViewController" customModule="Pozna_va_me_Noty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0zU-Vv-Vhh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
