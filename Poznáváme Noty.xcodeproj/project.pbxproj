@@ -24,6 +24,8 @@
 		1164748C28A008C700A0FE2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1164748A28A008C700A0FE2D /* Main.storyboard */; };
 		1164748E28A008C700A0FE2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1164748D28A008C700A0FE2D /* Assets.xcassets */; };
 		1164749128A008C700A0FE2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1164748F28A008C700A0FE2D /* LaunchScreen.storyboard */; };
+		11B912E028BE266A00F1FA73 /* TaktovePredznamenaniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B912DF28BE266A00F1FA73 /* TaktovePredznamenaniViewController.swift */; };
+		11B912E228BE268200F1FA73 /* DynamikaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B912E128BE268200F1FA73 /* DynamikaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		1164748D28A008C700A0FE2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1164749028A008C700A0FE2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1164749228A008C700A0FE2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11B912DF28BE266A00F1FA73 /* TaktovePredznamenaniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaktovePredznamenaniViewController.swift; sourceTree = "<group>"; };
+		11B912E128BE268200F1FA73 /* DynamikaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamikaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 				114DA86D28BCD0AD00551C1C /* krizkyViewController.swift */,
 				114DA86F28BCD0C200551C1C /* beckaViewController.swift */,
 				114DA85B28BA66C200551C1C /* DelkaNotViewController.swift */,
+				11B912DF28BE266A00F1FA73 /* TaktovePredznamenaniViewController.swift */,
+				11B912E128BE268200F1FA73 /* DynamikaViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -192,6 +198,8 @@
 				114DA86C28BBC28F00551C1C /* NotyBasovyKlicProcvicovaniViewController.swift in Sources */,
 				114DA86428BB78AE00551C1C /* HudebniKliceProcvicovaniViewController.swift in Sources */,
 				114DA85C28BA66C200551C1C /* DelkaNotViewController.swift in Sources */,
+				11B912E028BE266A00F1FA73 /* TaktovePredznamenaniViewController.swift in Sources */,
+				11B912E228BE268200F1FA73 /* DynamikaViewController.swift in Sources */,
 				114DA87028BCD0C200551C1C /* beckaViewController.swift in Sources */,
 				114DA86028BA957900551C1C /* DelkaPomlkProcvicovaniViewController.swift in Sources */,
 				114DA86A28BBC27900551C1C /* NotyBasovyKlicViewController.swift in Sources */,
