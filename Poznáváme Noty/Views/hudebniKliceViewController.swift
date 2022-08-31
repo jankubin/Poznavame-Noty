@@ -25,7 +25,7 @@ class hudebniKliceViewController: UIViewController {
     
     @IBAction func violovyKlicButton(_ sender: Any) {
         imageView.image = UIImage(named: "violovyKlic")
-        popisTxt.text = "C klíč Nota C je přímo ve středu klíče, na obrázku tedy na třetí lince. C klíč se může ale také nacházet níže, či výše: dle toho se také jinde nachází nota C."}
+        popisTxt.text = "C klíč, nota C je ve středu klíče,tedy na třetí lince. C klíč se může ale také nacházet níže, či výše: dle toho se nachází nota C."}
         
     
     override func viewDidLoad() {
