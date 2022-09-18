@@ -15,12 +15,12 @@ class hudebniKliceViewController: UIViewController {
     
     @IBAction func houslovyKlicButton(_ sender: Any) {
         imageView.image = UIImage(named: "houslovyKlic")
-        popisTxt.text = "G klíč (Houslový klíč) Nota G1 se nachází na druhé lince odspodu, tedy na místě, odkud klíč jakoby začíná."
+        popisTxt.text = "G klíč (Houslový klíč) Nota G1 se nachází na druhé lince odspodu, tedy na místě, odkud klíč začíná."
     }
     
     @IBAction func basovyKlicButton(_ sender: Any) {
         imageView.image = UIImage(named: "basovyKlic")
-        popisTxt.text = "F klíč (basový klíč) F malé se je na druhé lince odshora."
+        popisTxt.text = "F klíč (Basový klíč) F malé se je na druhé lince odshora."
     }
     
     @IBAction func violovyKlicButton(_ sender: Any) {
